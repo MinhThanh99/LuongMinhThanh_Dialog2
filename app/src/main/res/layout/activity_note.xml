@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Creat New Note"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:layout_weight="6"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                />
+
+            <Button
+                android:layout_width="5dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:hint="Title"
+            android:layout_margin="10dp"
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Description"
+            android:layout_margin="10dp"
+            android:id="@+id/etDsciption"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind me at"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:hint="Selected timme"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="04/03/2021"
+                android:textSize="32dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Types:"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spMonHoc"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags:"/>
+            <TextView
+                android:id="@+id/tvMenu_tags"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android, VTC, FPT"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weeks:"/>
+            <TextView
+                android:id="@+id/tvMenu_weeks"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon, Thu, SAT"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
